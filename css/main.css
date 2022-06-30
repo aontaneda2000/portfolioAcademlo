@@ -1,0 +1,19 @@
+:root {
+  /* ============================ COLORES ============================  */
+  --color-fisrt: #197f5b;
+  --color-second: #ef9919;
+  --color-third: #f9f5f2;
+  --color-four: #f9f5f2;
+  --color-fith: #ffffff;
+
+  /* ============================ TIPOGRAFIA ============================  */
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
