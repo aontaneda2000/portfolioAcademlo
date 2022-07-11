@@ -1,19 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 :root {
   /* ============================ COLORES ============================  */
   --color-fisrt: #197f5b;
   --color-second: #ef9919;
   --color-third: #f9f5f2;
   --color-four: #f9f5f2;
-  --color-fith: #ffffff;
+  --color-fith: #000000;
+  --max-width: 1200px;
+  --header-heigth: 3.8rem;
 
-  /* ============================ TIPOGRAFIA ============================  */
+  /* ============== TIPOGRAFIA =============  */
+  --font: "Poppins", sans-serif;
 }
-
+/* ==============RESETEO====================== */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: var(--font);
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body {
+  /* Reseteo de márgenes */
+  margin: 0;
+
+  /* Evita barra de desplzamiento horizontal */
+  overflow-x: hidden;
+  /* color de letra */
+  /* background-color: var(--color-fisrt); */
+
+  /* Tipografía linkeada desde google fonts */
+  font-family: var(--font);
+}
+
+/* enlaces   */
+a {
+  color: var(--color-four);
+  transition: all 0.5 ease-out;
+}
+a:hover {
+  color: #ef9919;
+}
+
+/* resetear el encabezado de los titulos */
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+/* hack para imagenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* interlineado a los parrafos- como word */
+p {
+  line-height: 1.6;
+}
+
+/* ================= CLASES REUSABLES =========== */
+.section {
+  padding: 2rem 1rem;
+}
+
+/* .grid {
+  display: grid;
+  gap: 1.5rem;
+} */
+/* ==============COMPONENTES====================== */
+
+/* ==============MENU====================== */
+.menu-btn {
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--first-color);
+  color: #f9f5f2;
+}
+/* 
+.menu-btn:hover {
+  color: #ef9919;
+} */
+
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: var(--header-heigth);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: #086142;
+  /* enlaces activos */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+/* activar o mostrar menu */
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* enlaces  */
+.menu a {
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: #ef9919;
+}
+
+/* ==============HOME============== */
+
+/* contenedor padre */
+.home {
+  /* height: 100vh; */
+  /* background-color: #ef9919; */
+}
+/* =================titulos y descripcion================= */
+.home__data {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.home__title {
+  font-size: 2rem;
+}
+.h1-title {
+  color: #ef9919;
+}
+/* =================contenedor foto================= */
+
+.home__container {
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__blob {
+  /* border: 2px solid; */
+
+  width: 200px;
+  fill: var(--color-fisrt);
+}
+
+/* imagen */
+.home__blob-img {
+  width: 170px;
+}
+
+/* ====================contenedor iconos============== */
+
+.home__social {
+  margin-top: 2rem;
+  text-align: center;
+  /* border: solid 1px; */
+}
+.home__social-icon {
+  font-size: 1.25rem;
+  color: var(--color-fith);
+  margin-right: 1rem;
+}
+
+/* TITULOS */
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* ==============SKILLS === */
+
+.skills__icons {
+  width: 100px;
+}
+
+.logos {
+  margin-top: 2rem;
+}
+.skills__logos {
+  text-align: center;
+}
+
+/* 
+.linkedin {
+  color: #0a66c2;
+}
+
+.instagram {
+  color: #d8287c;
+}
+.github {
+  color: #24292f;
+} */
+/* ====================BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--color-fisrt);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: transparent;
+  border: 0.9px solid var(--color-second);
+}
+.home__button {
+  margin-top: 3rem;
+}
+/* FOOOTER */
+.footer {
+  background-color: var(--color-fith);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==============UTILITIES====================== */
+
+/* Maximo contenido de la pagina  */
+/* BORDES SOLID */
+
+.container {
+  /* border: 2px solid; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+/* .header {
+  border: 2px solid;
+}
+
+.logo {
+  border: 2px solid red;
+}
+
+.menu {
+  border: 2px solid blue;
+} */
+.none {
+  display: none;
+}
+
+/* BORDES SOLID */
+
+/* ==============SITE STYLES====================== */
+
+/* ESTILOS DE LA CABECERA */
+.header {
+  /* contenido fijo y posicionado a la parte izquierda y abajo */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* otro contenido no sobresalte */
+  z-index: 1000;
+  /* Pierde sus dimensiones por lo tanto ocupara el ancho del body */
+  width: 100%;
+  /* ancho del menu de navegacion  */
+  height: var(--header-heigth);
+  background-color: var(--color-fisrt);
+  /* alineado al centro logo y menu */
+  padding: 1rem;
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: --var(--color-four);
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#nav-close:hover {
+  color: var(--color-second);
+}
+
+#nav-open:hover {
+  color: var(--color-second);
+}
+
+@media screen and (min-width: 1024px) {
+  .skills__logos {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-between;
+    align-content: center;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    height: calc(var(--header-heigth) - 0.5rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: row;
+    width: auto;
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu a {
+    padding: 0 1rem;
+    background-color: #197f5b;
+  }
 }

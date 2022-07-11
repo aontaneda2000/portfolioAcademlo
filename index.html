@@ -6,26 +6,211 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Steven Ontaneda</title>
-  <link rel="stylesheet" href="main.css">
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
   <header class="header">
-    <nav class="nav">
-      <ul>
-        <li>Home</li>
-        <li>Acerca de mi</li>
-        <li>Mis habilidades</li>
-        <li>Experiencia</li>
-        <li>Mi portafolio</li>
-        <li>Contacto</li>
-      </ul>
-    </nav>
+    <section class="container">
+      <div class="logo">
+        <a href="index.html">Aaron</a>
+      </div>
+
+      <div class="menu-btn">
+        <i class="uil uil-apps" id="nav-open"></i>
+        <i class="uil uil-times none" id="nav-close"></i>
+      </div>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">My projects</a>
+        <a href="#contact">Contact me</a>
+      </nav>
+    </section>
   </header>
-  <main>
 
-  </main>
+  <!-- HOME -->
+  <section id="home" class="home section">
+    <!-- contenedor de titulo, parrafo -->
 
+    <div class="home__data container">
+      <h1 class="home__title">I'm <span class="h1-title">Aaron Chavez</span></h1>
+      <p class="home__description">I create, design and develop to give value to your product.</p>
+    </div>
+    <!-- abre contenedor padre-->
+    <div class="home__container container">
+      <!-- contenedor de svg o imagen -->
+      <div class="home__img">
+
+        <svg class="home__blob" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.8 61.8">
+          <g data-name="Layer 2">
+            <g data-name="—ÎÓÈ 1">
+              <circle cx="30.9" cy="30.9" r="30.9" fill="#ffc200" />
+              <path fill="#677079" fill-rule="evenodd"
+                d="M52.587 52.908a30.895 30.895 0 0 1-43.667-.291 9.206 9.206 0 0 1 4.037-4.832 19.799 19.799 0 0 1 4.075-2.322c-2.198-7.553 3.777-11.266 6.063-12.335 0 3.487 3.265 1.173 7.317 1.217 3.336.037 9.933 3.395 9.933-1.035 3.67 1.086 7.67 8.08 4.917 12.377a17.604 17.604 0 0 1 3.181 2.002 10.192 10.192 0 0 1 4.144 5.22z" />
+              <path fill="#f9dca4" fill-rule="evenodd"
+                d="M24.032 38.68l14.92.09v3.437l-.007.053a2.784 2.784 0 0 1-.07.462l-.05.341-.03.071c-.966 5.074-5.193 7.035-7.803 8.401-2.75-1.498-6.638-4.197-6.947-8.972l-.013-.059v-.2a8.897 8.897 0 0 1-.004-.207c0 .036.003.07.004.106z" />
+              <path fill-rule="evenodd"
+                d="M38.953 38.617v4.005a7.167 7.167 0 0 1-.095 1.108 6.01 6.01 0 0 1-.38 1.321c-5.184 3.915-13.444.704-14.763-5.983z"
+                opacity=".11" />
+              <path fill="#f9dca4" fill-rule="evenodd"
+                d="M18.104 25.235c-4.94 1.27-.74 7.29 2.367 7.264a19.805 19.805 0 01-2.367-7.264zM43.837 25.235c4.94 1.27.74 7.29-2.368 7.263a19.8 19.8 0 002.368-7.263z" />
+              <path fill="#ffe8be" fill-rule="evenodd"
+                d="M30.733 11.361c20.523 0 12.525 32.446 0 32.446-11.83 0-20.523-32.446 0-32.446z" />
+              <path fill="#8a5c42" fill-rule="evenodd"
+                d="M21.047 22.105a1.738 1.738 0 0 1-.414 2.676c-1.45 1.193-1.503 5.353-1.503 5.353-.56-.556-.547-3.534-1.761-5.255s-2.032-13.763 4.757-18.142a4.266 4.266 0 0 0-.933 3.6s4.716-6.763 12.54-6.568a5.029 5.029 0 0 0-2.487 3.26s6.84-2.822 12.54.535a13.576 13.576 0 0 0-4.145 1.947c2.768.076 5.443.59 7.46 2.384a3.412 3.412 0 0 0-2.176 4.38c.856 3.503.936 6.762.107 8.514-.829 1.752-1.22.621-1.739 4.295a1.609 1.609 0 0 1-.77 1.214c-.02.266.382-3.756-.655-4.827-1.036-1.07-.385-2.385.029-3.163 2.89-5.427-5.765-7.886-10.496-7.88-4.103.005-14 1.87-10.354 7.677z" />
+              <path fill="#434955" fill-rule="evenodd"
+                d="M19.79 49.162c.03.038 10.418 13.483 22.63-.2-1.475 4.052-7.837 7.27-11.476 7.26-6.95-.02-10.796-5.6-11.154-7.06z" />
+              <path fill="#e6e6e6" fill-rule="evenodd"
+                d="M36.336 61.323c-.41.072-.822.135-1.237.192v-8.937a.576.576 0 0 1 .618-.516.576.576 0 0 1 .619.516v8.745zm-9.82.166q-.622-.089-1.237-.2v-8.711a.576.576 0 0 1 .618-.516.576.576 0 0 1 .62.516z" />
+            </g>
+          </g>
+        </svg>
+
+      </div>
+    </div>
+
+    <!-- contenedor de iconos -->
+    <div class="home__social container">
+      <a href="" class="home__social-icon linkedin" target="__blank">
+        <i class="uil uil-linkedin-alt"></i>
+      </a>
+
+      <a href="" class="home__social-icon instagram" target="__blank">
+        <i class="uil uil-instagram"></i>
+      </a>
+
+      <a href="" class="home__social-icon github" target="__blank">
+        <i class="uil uil-github-alt"></i>
+      </a>
+    </div>
+    <!-- contenedor de buton -->
+    <div class="home__button container">
+      <a href="#contact" class="button button--flex">
+        Contact me <i class="uil uil-message button__icon"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about" class="about section container full-lg-screen">
+    <article class="text-lg-right">
+      <aside class="text-center text-lg-rigth">
+        <h2 class="section-title">About me</h2>
+        <h5>Front end Developer</h5>
+      </aside>
+      <p>Desde "" tengo experiencia en el área del desarrollo <i>web</i> y la educación para personas, empresas,
+        instituciones y comunidades de internet. </p>
+      <p>Tambien colaboro en proyectos como <i>Freelance full stack</i> estoy más orientado a <i>Front end</i> pero
+        tambien hago <i>Back end</i> </p>
+
+      <!-- clase de texto -->
+      <div class="text-center text-lg-left">
+        <a class="button" href="" target="_blank" rel="noopener">Descarga mi CV</a>
+      </div>
+    </article>
+  </section>
+  <section id="skills" class="skills section container">
+    <h2 class="section-title">Skills</h2>
+    <div class="container skills__logos">
+
+      <!-- HTML -->
+      <div class="logos">
+        <svg class="skills__icons" xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" viewBox="0 0 512 512">
+          <path fill="#e34f26" d="M71 460L30 0h451l-41 460-185 52" />
+          <path fill="#ef652a" d="M256 472l149-41 35-394H256" />
+          <path fill="#ebebeb" d="M256 208h-75l-5-58h80V94H114l15 171h127zm-1 147l-63-17-4-45h-56l7 89 116 32z" />
+          <path fill="#fff" d="M255 208v57h70l-7 73-63 17v59l116-32 16-174zm0-114v56h137l5-56z" />
+        </svg>
+      </div>
+      <!-- CSS -->
+      <div class="logos">
+        <svg class="skills__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+          <path fill="#1572B6"
+            d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z" />
+          <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z" />
+          <path fill="#fff"
+            d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z" />
+          <path fill="#EBEBEB"
+            d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z" />
+          <path fill="#fff"
+            d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z" />
+          <path fill="#EBEBEB"
+            d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z" />
+        </svg>
+      </div>
+      <!-- js -->
+      <div class="logos">
+        <svg class="skills__icons" xmlns="http://www.w3.org/2000/svg" width="78.562" height="110.589"
+          viewBox="0 0 78.562 110.589">
+          <path fill="#e6a329" d="M78.562,489.9H0l7.365,79.867,31.912,9.051,31.912-9.051Z" data-name="Path 275"
+            transform="translate(0 -468.229)" />
+          <path fill="#f1bf22" d="M887.9,637v75.643l25.856-7.325L920.046,637Z" data-name="Path 276"
+            transform="translate(-848.623 -608.822)" />
+          <path fill="#fff"
+            d="M434.124,858.5H394.369L391.6,888.4l.057-.186h33.774l-1.1,12.651-10.776,3.1-10.935-3.15-.655-7.657h-9.926l1.416,15.3,20.1,5.706,20.109-5.706,2.769-30.032H400.589l.46-10.006h24.869l.372,5.733H436.3Z"
+            data-name="Path 277" transform="translate(-374.277 -820.524)" />
+          <path fill="#ebebeb"
+            d="M413.563,858.5H394.369L391.6,888.4l.057-.186h21.905v-9.754H401.987l.46-10.006h11.116Zm-11.576,34.663h-9.949l1.416,15.292,20.1,5.7V903.979l-10.935-3.158Z"
+            data-name="Path 278" transform="translate(-374.277 -820.524)" />
+          <path fill="#231f20"
+            d="M564.094,9.891H557.1v5.021h12V0h-5ZM586.371.08H574.179V5.3c1.628,1.628,2.477,2.411,4.875,4.769h-4.875v4.76h12.191V10.077L581.5,5.308h4.875Z"
+            data-name="Path 279" transform="translate(-532.456)" />
+        </svg>
+      </div>
+
+      <!-- github -->
+      <div class="logos">
+        <svg class="skills__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path
+            d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z" />
+        </svg>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="projects" class="projects section container">
+    <h2 class="section-title">Projects</h2>
+    <div class="container projects__img">
+      <div class="projects">
+        <img src="assets/img/image 4.png" alt="Project1" srcset="">
+      </div>
+      <div class="projects">
+        <img src="assets/img/Rectangle 59.png" alt="Project1" srcset="">
+      </div>
+      <div class="projects">
+        <img src="assets/img/Rectangle 60.png" alt="Project1" srcset="">
+      </div>
+    </div>
+
+
+  </section>
+  <section id="contact" class="contact section container" style="height: 100vh;">
+    <h2 class="section-title">Contact me</h2>
+    <form action="">
+
+      <input type="text" name="" id="" placeholder="Ingrese su correo">
+      <input type="text" name="" id="" placeholder="Ingrese su NOMBRE">
+      <input type="text" name="" id="" placeholder="Ingrese su TELEFONO">
+    </form>
+  </section>
+
+  <footer class="footer section">
+    <p>Sitio diseñado por <a href="#">Aaron Chavez </a> 🔥
+
+
+    </p>
+
+  </footer>
+
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
