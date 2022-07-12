@@ -95,10 +95,10 @@ p {
   padding: 2rem 1rem;
 }
 
-/* .grid {
+.grid {
   display: grid;
   gap: 1.5rem;
-} */
+}
 /* ==============COMPONENTES====================== */
 
 /* ==============MENU====================== */
@@ -246,13 +246,62 @@ p {
 }
 /* FOOOTER */
 .footer {
-  background-color: var(--color-fith);
+  margin-bottom: var(--header-heigth);
+  padding: 0.5rem;
   color: #fff;
-  display: flex;
+  text-align: center;
+  background-color: var(--color-fith);
+
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  /* height: calc(var(--header-heigth) + 4rem); */
+}
+/* ==============CONTACT ME====================== */
+/* .contact__container {
+  row-gap: 3rem;
+} */
+
+.contact__information {
+  /* display: flex; */
+  margin-bottom: 2rem;
 }
 
+/* icono de llamada mensaje, location */
+.contact__icon {
+  font-size: 2rem;
+  color: #ef9919;
+  margin-right: 0.75rem;
+}
+/*  */
+.contact__title {
+  font-size: 1.25rem;
+}
+
+.contact__subtitle {
+  font-size: 0.813rem;
+}
+/* ======================= */
+.contact__content {
+  /* background-color: #a19fad; */
+  border-radius: 1rem;
+  padding: 0.5rem 1rem 0.25rem;
+}
+
+.contact__label {
+  font-size: small;
+}
+
+.contact__input {
+  width: 100%;
+  background-color: hsl(250, 70%, 96%);
+  /* color: hsl(250, 8%, 45%); */
+  font-size: 0.938rem;
+  font-family: var(--font);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
 /* ==============UTILITIES====================== */
 
 /* Maximo contenido de la pagina  */
@@ -333,6 +382,10 @@ p {
     top: 0;
     padding: 0.5rem;
     height: calc(var(--header-heigth) - 0.5rem);
+  }
+
+  .footer {
+    margin-bottom: 0;
   }
 }
 
